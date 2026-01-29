@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SILK PARIS | Halal Gastronomic Restaurant & Lounge Paris 17</title>
+    <meta name="description" content="Silk Paris: Refined Halal Gastronomy, Signature Mocktails and Premium Shishas in an exceptional setting in Paris 17th.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Request Received</h3>
+            <p>Thank you for your reservation.</p>
+            <p>A confirmation will be sent to you very shortly.</p>
+            <button onclick="closeModal()" class="btn-close">Close</button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">SILK PARIS</div>
+        <ul class="nav-links">
+            <li><a href="#entrees">The Menu</a></li>
+            <li><a href="#boissons">Drinks</a></li>
+            <li><a href="#chichas">Lounge</a></li>
+            <li><a href="#reservation" class="btn-reserver-nav">Book Now</a></li>
+        </ul>
+        <div class="lang-switch">
+            <a href="index.html">FR</a>
+            <span class="sep">|</span>
+            <a href="en.html" class="active">EN</a>
+            <span class="sep">|</span>
+            <a href="ar.html">AR</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>SILK PARIS</h1>
+            <p class="subtitle">Halal Excellence in the 17th District</p>
+            <div class="hero-buttons">
+                <a href="#entrees" class="btn-hero">View Menu</a>
+                <a href="#reservation" class="btn-hero-filled">Book a Table</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="entrees" class="menu-section">
+        <h2 class="section-title">Starters</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="images/Soupe de saison.jpg" alt="Soup"><div class="item-text"><div class="item-header"><h3>Seasonal Soup</h3><span class="price">18€</span></div><p>Fresh vegetables, chosen according to the season.</p></div></div>
+            <div class="menu-item"><img src="images/dynamite fries.jpg" alt="Fries"><div class="item-text"><div class="item-header"><h3>Dynamite Fries</h3><span class="price">18€</span></div><p>Homemade fries, cheddar, fried onions, jalapeños.</p></div></div>
+            <div class="menu-item"><img src="images/carpaccio.jpg" alt="Carpaccio"><div class="item-text"><div class="item-header"><h3>Beef Carpaccio</h3><span class="price">21€</span></div><p>Thinly sliced beef, olive oil, basil, parmesan.</p></div></div>
+            <div class="menu-item"><img src="images/Brochettes de poulet.jpeg" alt="Skewer"><div class="item-text"><div class="item-header"><h3>Chicken Skewer</h3><span class="price">18€</span></div><p>Homemade teriyaki sauce marinade and sesame seeds.</p></div></div>
+            <div class="menu-item"><img src="images/gambas dynamite.jpg" alt="Prawns"><div class="item-text"><div class="item-header"><h3>Buffalo Prawns</h3><span class="price">20€</span></div><p>Fresh prawns, spicy batter, special sauce.</p></div></div>
+            <div class="menu-item"><img src="images/rakakat et samboussek.jpg" alt="Rakakat"><div class="item-text"><div class="item-header"><h3>Rakakats and Samboussek</h3><span class="price">16€</span></div><p>Assortment of cheese rolls and samosas.</p></div></div>
+            <div class="menu-item"><img src="images/stracciatella.jpg" alt="Stracciatella" onerror="this.src='images/entree restaurant.jpg'"><div class="item-text"><div class="item-header"><h3>Stracciatella</h3><span class="price">20€</span></div><p>Stracciatella di bufala, cherry tomatoes, basil.</p></div></div>
+            <div class="menu-item"><img src="images/salade avocat crevette.jpg" alt="Salad"><div class="item-text"><div class="item-header"><h3>Avocado Prawn Salad</h3><span class="price">23€</span></div><p>Arugula, oak leaf lettuce, avocado slices and prawns.</p></div></div>
+            <div class="menu-item"><img src="images/mac and cheese.jpg" alt="Mac"><div class="item-text"><div class="item-header"><h3>Mac & Cheese</h3><span class="price">16€</span></div><p>Pasta shells, cream, gruyère cheese, nutmeg.</p></div></div>
+        </div>
+    </section>
+
+    <section id="plats" class="menu-section">
+         <div style="text-align: center; margin-bottom: 20px;"><a href="#entrees" class="back-link">↑ Back to Starters</a></div>
+        <h2 class="section-title">Main Courses</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="images/Poulet frit Coreen.png" alt="Chicken"><div class="item-text"><div class="item-header"><h3>Korean Fried Chicken</h3><span class="price">22€</span></div><p>Double fried, spicy sweet and sour sauce.</p></div></div>
+            <div class="menu-item"><img src="images/gnocchi poeles.jpg" alt="Gnocchi"><div class="item-text"><div class="item-header"><h3>Cheese Sauce Gnocchi</h3><span class="price">23€</span></div><p>Homemade gnocchi, 3-cheese sauce.</p></div></div>
+            <div class="menu-item"><img src="images/Crispy chicken burger.jpg" alt="Burger"><div class="item-text"><div class="item-header"><h3>Crispy Chicken Burger</h3><span class="price">26€</span></div><p>Crispy chicken, spicy sauce, cheddar.</p></div></div>
+            <div class="menu-item"><img src="images/Burger Limousine.png" alt="Limousine"><div class="item-text"><div class="item-header"><h3>Limousine Burger</h3><span class="price">28€</span></div><p>100% Limousine beef, caramelized onions, west coast sauce.</p></div></div>
+            <div class="menu-item"><img src="images/sexy pasta.jpg" alt="Pasta"><div class="item-text"><div class="item-header"><h3>Sexy Pasta</h3><span class="price">29€</span></div><p>Cooked in foil, ultra-creamy sauce.</p></div></div>
+            <div class="menu-item"><img src="images/saumon et tagliatelle.png" alt="Salmon"><div class="item-text"><div class="item-header"><h3>Salmon Tagliatelle</h3><span class="price">30€</span></div><p>Grilled steak, cream tagliatelle and lemon.</p></div></div>
+            <div class="menu-item"><img src="images/Escalope milanaise.jpg" alt="Escalope"><div class="item-text"><div class="item-header"><h3>Milanese Cutlet</h3><span class="price">26€</span></div><p>Breaded chicken, basil tomato sauce spaghetti.</p></div></div>
+            <div class="menu-item"><img src="images/tournedo.png" alt="Tournedos"><div class="item-text"><div class="item-header"><h3>Grilled Tournedos</h3><span class="price">38€</span></div><p>Tender steak piece, potato pancake.</p></div></div>
+            <div class="menu-item"><img src="images/risotto.jpg" alt="Risotto"><div class="item-text"><div class="item-header"><h3>Sea Bream Risotto</h3><span class="price">30€</span></div><p>Fish steak, creamy rice, mushrooms.</p></div></div>
+            <div class="menu-item">
+    <img src="images/kabsa laham.jpg" alt="Kabsa Laham">
+    <div class="item-text">
+        <div class="item-header">
+            <h3>Kabsa Laham</h3>
+            <span class="price">38€</span>
+        </div>
+        <p>Tender braised lamb shank, served with aromatic spiced rice, crunchy nuts, and fresh herbs.</p>
+    </div>
+</div>
+        </div>
+        <div class="supplements"><h3>Extra Sides (8€)</h3><p>Mashed Potatoes • Potato Pancakes • Fries • Green Beans • Sautéed Vegetables • Pasta</p></div>
+        <div style="text-align: center; margin-top: 30px;"><a href="#entrees" class="back-link">↑ Back to Starters</a></div>
+    </section>
+
+    <section id="desserts" class="menu-section">
+        <h2 class="section-title">Pastries & Sweets</h2>
+        <p style="text-align: center; font-style: italic; margin-bottom: 20px;">All our pastries are 15€</p>
+        <p style="text-align: center; font-weight: bold; color: #C5A059; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px;">Ask for our Dessert Carousel</p>
+        
+        <div class="menu-grid">
+            <div class="menu-item"><img src="images/dessert1.jpg" alt="Dessert 1" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert2.jpg" alt="Dessert 2" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert3.jpg" alt="Dessert 3" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert4.jpg" alt="Dessert 4" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert5.jpg" alt="Dessert 5" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert6.jpg" alt="Dessert 6" onerror="this.src='images/entree restaurant.jpg'"></div>
+        </div>
+    </section>
+
+    <section id="boissons" class="menu-section cream-bg">
+        <h2 class="section-title">Drinks</h2>
+        
+        <div class="signature-box-main">
+            <div class="signature-img">
+                <img src="images/champagne saoudien.jpg" alt="Saudi Champagne" onerror="this.src='images/Cocktail1.jpg'">
+            </div>
+            <div class="signature-text">
+                <h3>Saudi Champagne (1L Pitcher)</h3>
+                <span class="price-big">20€</span>
+                <p class="signature-desc">The Silk Signature. Fresh mint macerated for 6h in apple juice, orange and lemon slices, topped with soda water... The rest is a secret.</p>
+            </div>
+        </div>
+
+        <div class="drinks-visual-container">
+            <div class="drink-img-box"><img src="images/Cocktail1.jpg" alt="Fresh Cocktail"></div>
+            <div class="drink-img-box"><img src="images/Cocktail2.jpg" alt="Silk Creation"></div>
+        </div>
+
+        <div class="drinks-grid">
+            <div class="drink-category">
+                <h3>Mocktails (13€)</h3>
+                <ul class="drink-list">
+                    <li><strong>Pink Lemonade</strong><p>Ginger beer, basil, club soda, blackberry, lemon.</p></li>
+                    <li><strong>Virgin Mojito</strong><p>Perrier, lime, cane sugar, mint.</p></li>
+                    <li><strong>Virgin Colada</strong><p>Coconut cream, pineapple juice, lemon, peach syrup.</p></li>
+                    <li><strong>Le Red</strong><p>Guava, apple, cranberry, lime, raspberry.</p></li>
+                    <li><strong>Le Tropical</strong><p>Pineapple, orange, passion fruit, lemon, peach.</p></li>
+                </ul>
+            </div>
+
+            <div class="drink-category">
+                <h3>Soft Drinks & Juices</h3>
+                <ul class="drink-list-simple">
+                    <li><span>Coca-Cola / Zero / 7Up</span> <span>7€</span></li>
+                    <li><span>Schweppes Tonic / Ginger Beer</span> <span>7€</span></li>
+                    <li><span>Diabolo</span> <span>7€</span></li>
+                    <li><span>Red Bull</span> <span>9€</span></li>
+                    <li class="separator"></li>
+                    <li><span>Juices (Strawberry, Pineapple, Mango...)</span> <span>7€</span></li>
+                    <li><span>Juices (Orange, Apple, Apricot)</span> <span>7€</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hot-drinks-section">
+            <h3 class="hot-title">Coffee & Tea Time</h3>
+            <div class="hot-content">
+                <div class="hot-text">
+                    <p>Finish your meal with our selection of exceptional coffees and fragrant teas.</p>
+                    <ul class="drink-list-simple">
+                        <li><span>Coffee / Decaf</span> <span>4€</span></li>
+                        <li><span>Mint Tea</span> <span>5€</span></li>
+                        <li><span>Gourmet Tea</span> <span>12€</span></li>
+                    </ul>
+                </div>
+                <div class="hot-image">
+                    <img src="images/cafe.jpeg" alt="Gourmet Coffee">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chichas" class="chicha-section">
+        <div class="chicha-overlay"></div>
+        <div class="chicha-content">
+            <h2 class="section-title white-text">Lounge & Shisha</h2>
+            
+            <div class="chicha-showcase-container">
+                
+                <div class="chicha-spotlight">
+                    <div class="glow-effect"></div> <img src="images/Chicha complete.png" alt="Silk Shisha" class="floating-img">
+                    <div class="chicha-badge">PREMIUM</div>
+                </div>
+
+                <div class="chicha-spotlight small-spotlight">
+                    <div class="glow-effect"></div>
+                    <img src="images/charbon chicha.png" alt="Kaloud" class="floating-img-slow">
+                    <p class="legend-text">Kaloud Service</p>
+                </div>
+
+            </div>
+
+            <div class="chicha-price-box">
+                <div class="price-row">
+                    <span>PREMIUM SHISHA</span>
+                    <span class="price-gold">30€</span>
+                </div>
+                <div class="price-row-small">
+                    <span>Extra Head</span>
+                    <span>+20€</span>
+                </div>
+            </div>
+
+            <div class="flavors-container">
+                <h3>Flavors</h3>
+                <div class="flavors-grid">
+                    <span>Mint</span> <span>Grape Mint</span> <span>Me Amor</span>
+                    <span>Double Apples</span> <span>Apple Mint</span> <span>Love 66</span>
+                    <span>Grapes</span> <span>Hawaii</span> <span>Lemon Mint</span>
+                </div>
+            </div>
+            
+            <div class="lounge-gallery">
+                <h3>Night Ambience</h3>
+                <div class="gallery-row">
+                    <img src="images/deco chicha sombre 2.jpg" alt="Silk Ambience 1">
+                    <img src="images/deco chicha sombre3.jpg" alt="Silk Ambience 2">
+                    <img src="images/deco salle chicha sombre.jpg" alt="Silk Ambience 3">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <h2 class="section-title">Reservation</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Book your exceptional table.</p>
+        
+        <form id="bookingForm" name="reservation-silk" method="POST" data-netlify="true" class="reservation-form">
+            <input type="hidden" name="form-name" value="reservation-silk">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="nom" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="time" name="heure" min="18:00" max="02:00" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select name="couverts" required>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6+">More than 6</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="telephone" placeholder="+33..." required>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+    <div class="footer-content">
+        <div class="logo-footer">SILK PARIS</div>
+        <p class="address-footer">13B Rue Vernier, 75017 PARIS</p>
+        <div class="social-links">
+            <a href="https://instagram.com/silk.paris" target="_blank">INSTAGRAM</a>
+            <span class="separator">|</span>
+            <a href="https://tiktok.com/@silkparisrestaurant" target="_blank">TIKTOK</a>
+        </div>
+        <p class="copyright">© 2026 Tous droits réservés.</p>
+        
+        <p class="creator" style="margin-top: 15px; font-size: 0.8rem; opacity: 0.8;">
+            Designed by <a href="https://littlecreatrice.com" target="_blank" style="color:var(--gold-classic); text-decoration: none;">LITTLE CREATRICE</a>
+        </p>
+
+        <p style="font-size: 0.7rem; margin-top: 10px;">
+            <a href="mentions-legales.html" style="color: #666; text-decoration: none;">Mentions Légales</a>
+        </p>
+    </div>
+</footer>
+
+    <script>
+        const form = document.getElementById('bookingForm');
+        const modal = document.getElementById('success-modal');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            }).then(() => {
+                modal.style.display = 'flex';
+                form.reset();
+            }).catch((error) => {
+                alert('Error sending request.');
+            });
+        });
+        function closeModal() { modal.style.display = 'none'; }
+    </script>
+
+</body>
+</html>

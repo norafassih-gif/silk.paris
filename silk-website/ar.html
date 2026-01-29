@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SILK PARIS | مطعم فاخر وصالة في باريس</title>
+    <meta name="description" content="سيلك باريس: مأكولات حلال فاخرة، موكتيلات مميزة وشيشة بريميوم في أجواء استثنائية في الدائرة 17 بباريس.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>تم استلام طلبك</h3>
+            <p>شكراً لحجزك.</p>
+            <p>سيتم إرسال تأكيد الحجز إليك قريباً جداً.</p>
+            <button onclick="closeModal()" class="btn-close">إغلاق</button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">SILK PARIS</div>
+        <ul class="nav-links">
+            <li><a href="#entrees">القائمة</a></li>
+            <li><a href="#boissons">المشروبات</a></li>
+            <li><a href="#chichas">الصالة</a></li>
+            <li><a href="#reservation" class="btn-reserver-nav">احجز الآن</a></li>
+        </ul>
+        <div class="lang-switch">
+            <a href="index.html">FR</a>
+            <span class="sep">|</span>
+            <a href="en.html">EN</a>
+            <span class="sep">|</span>
+            <a href="ar.html" class="active">AR</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>سيلك باريس</h1>
+            <p class="subtitle">التميز الحلال في الدائرة 17</p>
+            <div class="hero-buttons">
+                <a href="#entrees" class="btn-hero">شاهد القائمة</a>
+                <a href="#reservation" class="btn-hero-filled">حجز طاولة</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="entrees" class="menu-section">
+        <h2 class="section-title">المقبلات</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="images/Soupe de saison.jpg" alt="Soup"><div class="item-text"><div class="item-header"><h3>شوربة الموسم</h3><span class="price">18€</span></div><p>خضروات طازجة، يتم اختيارها حسب الموسم لنكهة أصيلة.</p></div></div>
+            <div class="menu-item"><img src="images/dynamite fries.jpg" alt="Fries"><div class="item-text"><div class="item-header"><h3>ديناميت فرايز</h3><span class="price">18€</span></div><p>بطاطس منزلية، جبن شيدر، بصل مقلي، هلابينو وصلصة ويست كوست.</p></div></div>
+            <div class="menu-item"><img src="images/carpaccio.jpg" alt="Carpaccio"><div class="item-text"><div class="item-header"><h3>كارباتشيو اللحم</h3><span class="price">21€</span></div><p>شرائح لحم رفيعة، زيت زيتون، ريحان، وجبنة بارميزان.</p></div></div>
+            <div class="menu-item"><img src="images/Brochettes de poulet.jpeg" alt="Skewer"><div class="item-text"><div class="item-header"><h3>أسياخ الدجاج</h3><span class="price">18€</span></div><p>تتبيلة بصلصة ترياكي منزلية وبذور السمسم.</p></div></div>
+            <div class="menu-item"><img src="images/gambas dynamite.jpg" alt="Prawns"><div class="item-text"><div class="item-header"><h3>جامباس بوفالو</h3><span class="price">20€</span></div><p>روبيان طازج،튀김 حار، يقدم مع صلصة خاصة.</p></div></div>
+            <div class="menu-item"><img src="images/rakakat et samboussek.jpg" alt="Rakakat"><div class="item-text"><div class="item-header"><h3>رقاقات وسمبوسك</h3><span class="price">16€</span></div><p>تشكيلة من مقرمشات الجبن والسمبوسة بنكهات شرقية.</p></div></div>
+            <div class="menu-item"><img src="images/stracciatella.jpg" alt="Stracciatella" onerror="this.src='images/entree restaurant.jpg'"><div class="item-text"><div class="item-header"><h3>ستراتشياتيلا</h3><span class="price">20€</span></div><p>ستراتشياتيلا دي بوفالا، طماطم كرزية، ريحان، وصلصة بلسميك سرية.</p></div></div>
+            <div class="menu-item"><img src="images/salade avocat crevette.jpg" alt="Salad"><div class="item-text"><div class="item-header"><h3>سلطة الأفوكادو والروبيان</h3><span class="price">23€</span></div><p>جرجير، خس، شرائح أفوكادو وروبيان.</p></div></div>
+            <div class="menu-item"><img src="images/mac and cheese.jpg" alt="Mac"><div class="item-text"><div class="item-header"><h3>ماك أند تشيز</h3><span class="price">16€</span></div><p>معكرونة، كريمة، جبن غرويير، وجوزة الطيب.</p></div></div>
+        </div>
+    </section>
+
+    <section id="plats" class="menu-section">
+         <div style="text-align: center; margin-bottom: 20px;"><a href="#entrees" class="back-link">↑ العودة للمقبلات</a></div>
+        <h2 class="section-title">الأطباق الرئيسية</h2>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="images/Poulet frit Coreen.png" alt="Chicken"><div class="item-text"><div class="item-header"><h3>دجاج مقلي كوري</h3><span class="price">22€</span></div><p>مطهو مرتين، صلصة حلوة وحامضة وحارة.</p></div></div>
+            <div class="menu-item"><img src="images/gnocchi poeles.jpg" alt="Gnocchi"><div class="item-text"><div class="item-header"><h3>نيوكي بصلصة الجبن</h3><span class="price">23€</span></div><p>نيوكي منزلي، صلصة 3 أجبان فاخرة.</p></div></div>
+            <div class="menu-item"><img src="images/Crispy chicken burger.jpg" alt="Burger"><div class="item-text"><div class="item-header"><h3>برجر دجاج مقرمش</h3><span class="price">26€</span></div><p>دجاج مقرمش، صلصة حارة قليلاً، شيدر. يقدم مع البطاطس.</p></div></div>
+            <div class="menu-item"><img src="images/Burger Limousine.png" alt="Limousine"><div class="item-text"><div class="item-header"><h3>برجر ليموزين</h3><span class="price">28€</span></div><p>100% لحم بقري ليموزين، بصل مكرمل، صلصة ويست كوست.</p></div></div>
+            <div class="menu-item"><img src="images/sexy pasta.jpg" alt="Pasta"><div class="item-text"><div class="item-header"><h3>سيكسي باستا</h3><span class="price">29€</span></div><p>مطهوة في ورق القصدير، صلصة كريمية جداً، جبن ذائب.</p></div></div>
+            <div class="menu-item"><img src="images/saumon et tagliatelle.png" alt="Salmon"><div class="item-text"><div class="item-header"><h3>تالياتيلي السلمون</h3><span class="price">30€</span></div><p>قطعة سلمون مشوية، تالياتيلي بالكريمة والليمون.</p></div></div>
+            <div class="menu-item"><img src="images/Escalope milanaise.jpg" alt="Escalope"><div class="item-text"><div class="item-header"><h3>إسكالوب ميلانيز</h3><span class="price">26€</span></div><p>دجاج بانيه، سباغيتي بصلصة الطماطم والريحان.</p></div></div>
+            <div class="menu-item"><img src="images/tournedo.png" alt="Tournedos"><div class="item-text"><div class="item-header"><h3>تورنيدو مشوي</h3><span class="price">38€</span></div><p>قطعة لحم طرية للغاية، مع فطيرة البطاطس.</p></div></div>
+            <div class="menu-item"><img src="images/risotto.jpg" alt="Risotto"><div class="item-text"><div class="item-header"><h3>ريزوتو الدنيس</h3><span class="price">30€</span></div><p>قطعة سمك، أرز كريمي، فطر وبصل.</p></div></div>
+            <div class="menu-item">
+    <img src="images/kabsa laham.jpg" alt="Kabsa Laham">
+    <div class="item-text">
+        <div class="item-header">
+            <h3>كبسة لحم</h3>
+            <span class="price">38€</span>
+        </div>
+        <p>موزة غنم طرية مطهوة ببطء، تقدم مع أرز الكبسة العطري بالتوابل، مكسرات مقرمشة وأعشاب طازجة.</p>
+    </div>
+</div>
+        </div>
+        <div class="supplements"><h3>إضافات (8€)</h3><p>بطاطس مهروسة • فطائر البطاطس • بطاطس مقلية • فاصوليا خضراء • خضار سوتيه • باستا</p></div>
+        <div style="text-align: center; margin-top: 30px;"><a href="#entrees" class="back-link">↑ العودة للمقبلات</a></div>
+    </section>
+
+    <section id="desserts" class="menu-section">
+        <h2 class="section-title">الحلويات</h2>
+        <p style="text-align: center; font-style: italic; margin-bottom: 20px;">جميع حلوياتنا بسعر 15€</p>
+        <p style="text-align: center; font-weight: bold; color: #C5A059; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px;">اطلبوا كاروسيل الحلويات</p>
+        
+        <div class="menu-grid">
+            <div class="menu-item"><img src="images/dessert1.jpg" alt="Dessert 1" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert2.jpg" alt="Dessert 2" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert3.jpg" alt="Dessert 3" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert4.jpg" alt="Dessert 4" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert5.jpg" alt="Dessert 5" onerror="this.src='images/entree restaurant.jpg'"></div>
+            <div class="menu-item"><img src="images/dessert6.jpg" alt="Dessert 6" onerror="this.src='images/entree restaurant.jpg'"></div>
+        </div>
+    </section>
+
+    <section id="boissons" class="menu-section cream-bg">
+        <h2 class="section-title">المشروبات</h2>
+        
+        <div class="signature-box-main">
+            <div class="signature-img">
+                <img src="images/champagne saoudien.jpg" alt="Saudi Champagne" onerror="this.src='images/Cocktail1.jpg'">
+            </div>
+            <div class="signature-text">
+                <h3>شامبانيا سعودية (إبريق 1 لتر)</h3>
+                <span class="price-big">20€</span>
+                <p class="signature-desc">توقيع سيلك الخاص. نعناع طازج منقوع لمدة 6 ساعات في عصير التفاح، شرائح البرتقال والليمون، مع المياه الغازية... والباقي سر.</p>
+            </div>
+        </div>
+
+        <div class="drinks-visual-container">
+            <div class="drink-img-box"><img src="images/Cocktail1.jpg" alt="Cocktail"></div>
+            <div class="drink-img-box"><img src="images/Cocktail2.jpg" alt="Creation"></div>
+        </div>
+
+        <div class="drinks-grid">
+            <div class="drink-category">
+                <h3>موكتيلات (13€)</h3>
+                <ul class="drink-list">
+                    <li><strong>بينك ليمونيد</strong><p>جعة الزنجبيل، ريحان، صودا، توت، ليمون.</p></li>
+                    <li><strong>فيرجن موهيتو</strong><p>بيرييه، ليمون، سكر قصب، نعناع.</p></li>
+                    <li><strong>فيرجن كولادا</strong><p>كريمة جوز الهند، عصير أنanas، ليمون، شراب الخوخ.</p></li>
+                    <li><strong>ذا ريد</strong><p>جوافة، تفاح، توت بري، ليمون، توت العليق.</p></li>
+                    <li><strong>التروبيكال</strong><p>أناناس، برتقال، باشن فروت، ليمون، خوخ.</p></li>
+                </ul>
+            </div>
+
+            <div class="drink-category">
+                <h3>مشروبات غازية وعصائر</h3>
+                <ul class="drink-list-simple">
+                    <li><span>كوكاكولا / زيرو / سفن أب</span> <span>7€</span></li>
+                    <li><span>شويبس تونيك / جينجر بير</span> <span>7€</span></li>
+                    <li><span>ديابولو</span> <span>7€</span></li>
+                    <li><span>ريد بول</span> <span>9€</span></li>
+                    <li class="separator"></li>
+                    <li><span>عصائر (فراولة، أناناس، مانجو...)</span> <span>7€</span></li>
+                    <li><span>عصائر (برتقال، تفاح، مشمش)</span> <span>7€</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hot-drinks-section">
+            <h3 class="hot-title">القهوة والشاي</h3>
+            <div class="hot-content">
+                <div class="hot-text">
+                    <p>اختتم وجبتك بتشكيلتنا المختارة من القهوة الفاخرة والشاي العطري.</p>
+                    <ul class="drink-list-simple">
+                        <li><span>قهوة / منزوعة الكافيين</span> <span>4€</span></li>
+                        <li><span>شاي بالنعناع</span> <span>5€</span></li>
+                        <li><span>شاي جورماند</span> <span>12€</span></li>
+                    </ul>
+                </div>
+                <div class="hot-image">
+                    <img src="images/cafe.jpeg" alt="Coffee">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chichas" class="chicha-section">
+        <div class="chicha-overlay"></div>
+        <div class="chicha-content">
+            <h2 class="section-title white-text">الصالة والشيشة</h2>
+            
+            <div class="chicha-showcase-container">
+                <div class="chicha-spotlight">
+                    <div class="glow-effect"></div> <img src="images/Chicha complete.png" alt="Shisha" class="floating-img">
+                    <div class="chicha-badge">بريميوم</div>
+                </div>
+                <div class="chicha-spotlight small-spotlight">
+                    <div class="glow-effect"></div>
+                    <img src="images/charbon chicha.png" alt="Kaloud" class="floating-img-slow">
+                    <p class="legend-text">خدمة كالود</p>
+                </div>
+            </div>
+
+            <div class="chicha-price-box">
+                <div class="price-row">
+                    <span>شيشة بريميوم</span>
+                    <span class="price-gold">30€</span>
+                </div>
+                <div class="price-row-small">
+                    <span>رأس إضافي</span>
+                    <span>+20€</span>
+                </div>
+            </div>
+
+            <div class="flavors-container">
+                <h3>النكهات</h3>
+                <div class="flavors-grid">
+                    <span>نعناع</span> <span>عنب ونعناع</span> <span>مي أمور</span>
+                    <span>تفاحدين</span> <span>تفاح ونعناع</span> <span>Love 66</span>
+                    <span>عنب</span> <span>هاواي</span> <span>ليمون ونعناع</span>
+                </div>
+            </div>
+            
+            <div class="lounge-gallery">
+                <h3>أجواء مسائية</h3>
+                <div class="gallery-row">
+                    <img src="images/deco chicha sombre 2.jpg" alt="Ambience 1">
+                    <img src="images/deco chicha sombre3.jpg" alt="Ambience 2">
+                    <img src="images/deco salle chicha sombre.jpg" alt="Ambience 3">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <h2 class="section-title">الحجز</h2>
+        <p style="text-align: center; margin-bottom: 30px;">احجز طاولتك الاستثنائية.</p>
+        
+        <form id="bookingForm" name="reservation-silk" method="POST" data-netlify="true" class="reservation-form">
+            <input type="hidden" name="form-name" value="reservation-silk">
+            <div class="form-group">
+                <label>الاسم الكامل</label>
+                <input type="text" name="nom" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>التاريخ</label>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label>الوقت</label>
+                    <input type="time" name="heure" min="18:00" max="02:00" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>عدد الأشخاص</label>
+                    <select name="couverts" required>
+                        <option value="2">شخصين</option>
+                        <option value="3">3 أشخاص</option>
+                        <option value="4">4 أشخاص</option>
+                        <option value="5">5 أشخاص</option>
+                        <option value="6+">أكثر من 6</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>الهاتف</label>
+                    <input type="tel" name="telephone" placeholder="06..." required>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">تأكيد الطلب</button>
+        </form>
+    </section>
+
+    <footer>
+    <div class="footer-content">
+        <div class="logo-footer">SILK PARIS</div>
+        <p class="address-footer">13B Rue Vernier, 75017 PARIS</p>
+        <div class="social-links">
+            <a href="https://instagram.com/silk.paris" target="_blank">INSTAGRAM</a>
+            <span class="separator">|</span>
+            <a href="https://tiktok.com/@silkparisrestaurant" target="_blank">TIKTOK</a>
+        </div>
+        <p class="copyright">© 2026 Tous droits réservés.</p>
+        
+        <p class="creator" style="margin-top: 15px; font-size: 0.8rem; opacity: 0.8;">
+            Designed by <a href="https://littlecreatrice.com" target="_blank" style="color:var(--gold-classic); text-decoration: none;">LITTLE CREATRICE</a>
+        </p>
+
+        <p style="font-size: 0.7rem; margin-top: 10px;">
+            <a href="mentions-legales.html" style="color: #666; text-decoration: none;">Mentions Légales</a>
+        </p>
+    </div>
+</footer>
+
+    <script>
+        const form = document.getElementById('bookingForm');
+        const modal = document.getElementById('success-modal');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            }).then(() => {
+                modal.style.display = 'flex';
+                form.reset();
+            }).catch((error) => {
+                alert('حدث خطأ أثناء الإرسال.');
+            });
+        });
+        function closeModal() { modal.style.display = 'none'; }
+    </script>
+
+</body>
+</html>
