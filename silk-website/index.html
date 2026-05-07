@@ -9,8 +9,63 @@
     
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px; /* Un peu plus près du bord */
+            right: 20px;
+            background-color: #C5A059; /* Doré */
+            color: #FFF;
+            border-radius: 50px; /* Forme pilule */
+            /* C'est ICI que tout change : beaucoup moins de padding */
+            padding: 6px 14px; 
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Espace réduit entre icône et texte */
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            /* Taille de police réduite pour plus de finesse */
+            font-size: 0.7rem; 
+            text-transform: uppercase;
+            letter-spacing: 1.5px; /* Espacement des lettres pour l'élégance */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); /* Ombre plus douce */
+            z-index: 10000;
+            transition: all 0.3s ease;
+            border: 1px solid #C5A059;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #fff;
+            color: #C5A059;
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-icon {
+            /* Icône légèrement plus petite */
+            width: 16px; 
+            height: 16px;
+        }
+        
+        /* Sur mobile, on peut le rendre encore plus discret si besoin */
+        @media (max-width: 768px) {
+             .whatsapp-float {
+                 padding: 5px 12px;
+                 font-size: 0.65rem;
+             }
+        }
+    </style>
 </head>
 <body>
+
+    <a href="https://wa.me/33650505064" class="whatsapp-float" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span>Réserver via WhatsApp</span>
+    </a>
 
     <div id="success-modal" class="modal-overlay">
         <div class="modal-content">
@@ -74,19 +129,19 @@
             <div class="menu-item"><img src="images/Burger Limousine.png" alt="Limousine"><div class="item-text"><div class="item-header"><h3>Limousine Burger</h3><span class="price">28€</span></div><p>100% Boeuf Limousine, oignons caramélisés, sauce west coast.</p></div></div>
             <div class="menu-item"><img src="images/sexy pasta.jpg" alt="Pasta"><div class="item-text"><div class="item-header"><h3>Sexy Pasta</h3><span class="price">29€</span></div><p>Cuites en papillote, sauce ultra crémeuse.</p></div></div>
             <div class="menu-item"><img src="images/saumon et tagliatelle.png" alt="Saumon"><div class="item-text"><div class="item-header"><h3>Saumon Tagliatelle</h3><span class="price">30€</span></div><p>Pavé grillé, tagliatelles crème et citron.</p></div></div>
-            <div class="menu-item"><img src="images/Escalope-milanaise.jpg" alt="Escalope"><div class="item-text"><div class="item-header"><h3>Escalope Milanaise</h3><span class="price">26€</span></div><p>Poulet pané, spaghetti sauce tomate basilic.</p></div></div>
+            <div class="menu-item"><img src="images/escalope milanaise.jpg" alt="escalope"><div class="item-text"><div class="item-header"><h3>Escalope Milanaise</h3><span class="price">26€</span></div><p>Poulet pané, spaghetti sauce tomate basilic.</p></div></div>
             <div class="menu-item"><img src="images/tournedo.png" alt="Tournedos"><div class="item-text"><div class="item-header"><h3>Tournedos Grillé</h3><span class="price">38€</span></div><p>Pièce tendre, galette de pommes de terre.</p></div></div>
             <div class="menu-item"><img src="images/risotto.jpg" alt="Risotto"><div class="item-text"><div class="item-header"><h3>Risotto à la Daurade</h3><span class="price">30€</span></div><p>Pavé de poisson, riz crémeux, champignons.</p></div></div>
             <div class="menu-item">
-    <img src="images/Kabsa-laham.jpg" alt="Kabsa Laham">
-    <div class="item-text">
-        <div class="item-header">
-            <h3>Kabsa Laham</h3>
-            <span class="price">38€</span>
-        </div>
-        <p>Tendre souris d'agneau braisée, servie avec son riz aromatique aux épices, fruits secs croquants et herbes fraîches.</p>
-    </div>
-</div>
+                <img src="images/Kabsa laham.jpg" alt="Kabsa Laham">
+                <div class="item-text">
+                    <div class="item-header">
+                        <h3>Kabsa Laham</h3>
+                        <span class="price">38€</span>
+                    </div>
+                    <p>Tendre souris d'agneau braisée, servie avec son riz aromatique aux épices, fruits secs croquants et herbes fraîches.</p>
+                </div>
+            </div>
         </div>
         <div class="supplements"><h3>Suppléments Garniture (8€)</h3><p>Purée • Galettes pdt • Frites • Haricots verts • Légumes sautés • Pâtes</p></div>
         <div style="text-align: center; margin-top: 30px;"><a href="#entrees" class="back-link">↑ Retour aux Entrées</a></div>
@@ -226,8 +281,8 @@
         <h2 class="section-title">Réservation</h2>
         <p style="text-align: center; margin-bottom: 30px;">Réservez votre table d'exception.</p>
         
-        <form id="bookingForm" name="reservation-silk" method="POST" data-netlify="true" class="reservation-form">
-            <input type="hidden" name="form-name" value="reservation-silk">
+        <form id="bookingForm" action="https://formsubmit.co/silkparis75017@gmail.com" method="POST" class="reservation-form">
+            
             <div class="form-group">
                 <label>Nom complet</label>
                 <input type="text" name="nom" required>
@@ -270,6 +325,8 @@
             <a href="https://instagram.com/silk.paris" target="_blank">INSTAGRAM</a>
             <span class="separator">|</span>
             <a href="https://tiktok.com/@silkparisrestaurant" target="_blank">TIKTOK</a>
+            <span class="separator">|</span>
+            <a href="https://wa.me/33650505064" target="_blank">WHATSAPP</a>
         </div>
         <p class="copyright">© 2026 Tous droits réservés.</p>
         
@@ -286,22 +343,32 @@
     <script>
         const form = document.getElementById('bookingForm');
         const modal = document.getElementById('success-modal');
+        
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(form);
-            fetch('/', {
+            
+            fetch(form.action, {
                 method: 'POST',
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData).toString()
-            }).then(() => {
-                modal.style.display = 'flex';
-                form.reset();
-            }).catch((error) => {
-                alert('Erreur lors de l\'envoi.');
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    modal.style.display = 'flex'; // Affiche le succès
+                    form.reset(); // Vide le formulaire
+                } else {
+                    alert("Oups ! Il y a eu un problème avec votre envoi. Vous pouvez nous contacter via WhatsApp.");
+                }
+            }).catch(error => {
+                alert("Erreur technique. Veuillez nous contacter via WhatsApp.");
             });
         });
+
         function closeModal() { modal.style.display = 'none'; }
     </script>
+    
 <div id="cookie-banner" class="cookie-banner">
     <p>Nous utilisons des cookies pour garantir la meilleure expérience sur notre site.</p>
     <button id="accept-cookies" class="btn-cookie">ACCEPTER</button>
@@ -310,7 +377,6 @@
 <script>
     const cookieBanner = document.getElementById('cookie-banner');
     const acceptBtn = document.getElementById('accept-cookies');
-    // Vérifie si l'utilisateur a déjà accepté
     if (!localStorage.getItem('cookiesAccepted')) {
         cookieBanner.style.display = 'flex';
     }
