@@ -281,8 +281,11 @@
         <h2 class="section-title">Réservation</h2>
         <p style="text-align: center; margin-bottom: 30px;">Réservez votre table d'exception.</p>
         
-        <form id="bookingForm" action="https://formsubmit.co/silkparis75017@gmail.com" method="POST" class="reservation-form">
-            
+        <form action="https://formsubmit.co/silkparis75017@gmail.com" method="POST" class="reservation-form">
+            <input type="hidden" name="_subject" value="Nouvelle réservation - Silk Paris">
+            <input type="hidden" name="_next" value="https://www.silk.paris/merci.html">
+            <input type="hidden" name="_captcha" value="false">
+
             <div class="form-group">
                 <label>Nom complet</label>
                 <input type="text" name="nom" required>
