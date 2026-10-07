@@ -308,3 +308,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     .carousel-track { transition: none; }
     .floating-img, .floating-img-slow { animation: none; }
 }
+
+/* === HORAIRES (footer) === */
+.hours-footer { margin-top: 25px; font-size: .85rem; color: #ccc; line-height: 1.8; }
+.hours-footer .hours-title { color: var(--gold-classic); text-transform: uppercase; letter-spacing: 2px; font-size: .75rem; margin-bottom: 4px; }
+.hours-footer span { color: #fff; margin-inline-start: 6px; }
