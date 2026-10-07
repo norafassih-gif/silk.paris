@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://www.silk.paris/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.silk.paris/en.html"/><xhtml:link rel="alternate" hreflang="ar" href="https://www.silk.paris/ar.html"/></url>
-  <url><loc>https://www.silk.paris/en.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.silk.paris/"/><xhtml:link rel="alternate" hreflang="ar" href="https://www.silk.paris/ar.html"/></url>
-  <url><loc>https://www.silk.paris/ar.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://www.silk.paris/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.silk.paris/en.html"/></url>
-  <url><loc>https://www.silk.paris/mentions-legales.html</loc></url>
+  <url>
+    <loc>https://www.silk.paris/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.silk.paris/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.silk.paris/en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.silk.paris/ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.silk.paris/"/>
+  </url>
+  <url>
+    <loc>https://www.silk.paris/en.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.silk.paris/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.silk.paris/en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.silk.paris/ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.silk.paris/"/>
+  </url>
+  <url>
+    <loc>https://www.silk.paris/ar.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.silk.paris/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.silk.paris/en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.silk.paris/ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.silk.paris/"/>
+  </url>
 </urlset>
