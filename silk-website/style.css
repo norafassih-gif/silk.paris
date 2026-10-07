@@ -1,5 +1,16 @@
 /* === SILK PARIS - DESIGN LUXE FINAL === */
 
+/* === POLICES (hébergées sur le site, pas de Google Fonts : RGPD) === */
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/cormorant-garamond-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 300; font-display: swap; src: url('fonts/lato-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/lato-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/lato-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Amiri'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/amiri-arabic-400-normal.woff2') format('woff2'); unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF; }
+@font-face { font-family: 'Amiri'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/amiri-arabic-700-normal.woff2') format('woff2'); unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF; }
+
+
 :root {
     --bg-cream: #F9F4EF;      
     --text-dark: #1A1A1A;     
@@ -9,6 +20,7 @@
 }
 
 html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 80px; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -44,7 +56,7 @@ h1, h2, h3, .logo, .logo-footer {
 .hero {
     height: 75vh;
     display: flex; align-items: center; justify-content: center; text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('images/entree restaurant.jpg');
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('images/entree-restaurant.webp');
     background-size: cover; background-position: center; color: white;
 }
 .hero h1 { font-size: 3.5rem; margin-bottom: 10px; letter-spacing: 5px; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
@@ -112,7 +124,7 @@ h1, h2, h3, .logo, .logo-footer {
 /* === CHICHA INTÉGRATION (Dynamique & Glow) === */
 .chicha-section {
     position: relative; padding: 6rem 5%; color: white; text-align: center;
-    background: url('images/deco chicha sombre.jpg') center/cover fixed; /* Parallax */
+    background: url('images/deco-salle-chicha-sombre.webp') center/cover fixed; /* Parallax (désactivé sur mobile) */
     margin-bottom: 4rem; overflow: hidden;
 }
 .chicha-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); }
@@ -183,20 +195,6 @@ input, select { padding: 15px; border: 1px solid #ddd; background: white; font-s
 .btn-submit { padding: 15px; background: var(--text-dark); color: white; border: none; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: 0.3s; }
 .btn-submit:hover { background: var(--gold-classic); }
 
-/* Popup */
-.modal-overlay {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.8); z-index: 2000;
-    display: none; align-items: center; justify-content: center;
-}
-.modal-content {
-    background: white; padding: 40px; text-align: center; max-width: 400px; border-radius: 4px;
-    border-top: 4px solid var(--gold-classic); animation: slideDown 0.4s ease;
-}
-.modal-content h3 { color: var(--gold-classic); font-size: 2rem; margin-bottom: 20px; }
-.btn-close { margin-top: 20px; padding: 10px 30px; background: #eee; border: none; cursor: pointer; }
-@keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-
 /* Footer */
 footer { background: var(--text-dark); color: white; padding: 4rem 5%; text-align: center; }
 .logo-footer { font-size: 2rem; color: var(--gold-classic); margin-bottom: 10px; }
@@ -250,50 +248,63 @@ footer { background: var(--text-dark); color: white; padding: 4rem 5%; text-alig
 @media (max-width: 768px) {
     .lang-switch { margin-left: 0; margin-top: 10px; }
 }
-/* === COOKIE BANNER === */
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #111; /* Fond très sombre */
-    color: white;
-    padding: 15px 20px;
-    display: none; /* Caché par défaut, le script l'active */
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    z-index: 9999;
-    border-top: 1px solid var(--gold-classic);
-    font-size: 0.9rem;
-    box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
-}
+/* === ARABE : police adaptée === */
+html[lang="ar"] body { font-family: 'Amiri', 'Lato', serif; }
+html[lang="ar"] .item-header h3, html[lang="ar"] .section-title, html[lang="ar"] h3 { font-family: 'Amiri', 'Cormorant Garamond', serif; letter-spacing: 0; }
 
-.btn-cookie {
-    background-color: var(--gold-classic);
-    color: #111;
-    border: none;
-    padding: 8px 25px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    border-radius: 2px;
-    transition: 0.3s;
-}
+/* === MENU BURGER (mobile) === */
+.nav-toggle { display: none; background: none; border: 0; cursor: pointer; width: 44px; height: 44px; padding: 10px; }
+.nav-toggle span { display: block; height: 2px; background: var(--text-dark); margin: 5px 0; transition: transform .3s, opacity .3s; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-.btn-cookie:hover {
-    background-color: white;
-    color: black;
-}
+/* === DESSERTS : CARROUSEL === */
+.desserts-price { text-align: center; font-style: italic; margin-bottom: 10px; }
+.desserts-sub { text-align: center; font-weight: bold; color: var(--gold-classic); margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; font-size: .85rem; }
+.dessert-carousel { position: relative; max-width: 760px; margin: 0 auto; }
+.carousel-viewport { overflow: hidden; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+.carousel-track { display: flex; transition: transform .6s cubic-bezier(.22,.61,.36,1); touch-action: pan-y; }
+.carousel-slide { flex: 0 0 100%; aspect-ratio: 4 / 3; background: #f3ede6; }
+.carousel-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--gold-classic); background: rgba(26,26,26,.6); color: #fff; font-size: 1.8rem; line-height: 1; cursor: pointer; transition: background .3s; }
+.carousel-btn:hover { background: var(--gold-classic); }
+.carousel-btn.prev { left: 12px; }
+.carousel-btn.next { right: 12px; }
+[dir="rtl"] .carousel-btn.prev { left: auto; right: 12px; }
+[dir="rtl"] .carousel-btn.next { right: auto; left: 12px; }
+.carousel-dots { display: flex; justify-content: center; gap: 10px; margin-top: 18px; }
+.carousel-dots button { width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--gold-classic); background: transparent; padding: 0; cursor: pointer; }
+.carousel-dots button[aria-current="true"] { background: var(--gold-classic); }
+.dessert-carousel.single .carousel-btn, .dessert-carousel.single .carousel-dots { display: none; }
+.desserts-empty .dessert-carousel { display: none; }
 
-/* Mobile : Texte en haut, bouton en bas */
+/* === FORMULAIRE === */
+.form-rgpd { font-size: .75rem; color: #888; text-align: center; line-height: 1.5; }
+.form-rgpd a { color: var(--gold-classic); }
+.hp-field { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); opacity: 0; pointer-events: none; }
+
+/* === FOOTER : contact === */
+.footer-contact { margin-top: 10px; font-size: .9rem; }
+.footer-contact a { color: var(--gold-classic); text-decoration: none; letter-spacing: 1px; }
+.footer-contact a:hover { color: #fff; }
+
+/* Accessibilité : focus visible */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--gold-classic); outline-offset: 2px; }
+
 @media (max-width: 768px) {
-    .cookie-banner {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-        padding-bottom: 25px; /* Un peu d'espace pour le pouce */
-    }
+    .navbar { flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 0; }
+    .nav-toggle { display: block; order: 3; }
+    .lang-switch { order: 2; margin: 0; }
+    .nav-links { display: none; order: 4; width: 100%; flex-direction: column; align-items: center; gap: 18px; padding: 20px 0 10px; }
+    .nav-links.open { display: flex; }
+    .chicha-section { background-attachment: scroll; } /* iPhone ne gère pas le fixed */
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .menu-section { padding: 3rem 6%; margin: 0 0 2rem; }
+    .carousel-btn { width: 38px; height: 38px; font-size: 1.4rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .carousel-track { transition: none; }
+    .floating-img, .floating-img-slow { animation: none; }
 }

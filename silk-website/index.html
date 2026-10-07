@@ -8,7 +8,50 @@
     <meta name="description" content="Silk Paris : Gastronomie Halal raffinée, Mocktails signatures et Chichas premium dans un cadre d'exception Paris 17ème.">
     
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.silk.paris/">
+    <link rel="alternate" hreflang="fr" href="https://www.silk.paris/">
+    <link rel="alternate" hreflang="en" href="https://www.silk.paris/en.html">
+    <link rel="alternate" hreflang="ar" href="https://www.silk.paris/ar.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.silk.paris/">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#1A1A1A">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:site_name" content="Silk Paris">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://www.silk.paris/">
+    <meta property="og:title" content="SILK PARIS | Restaurant Gastronomique Halal & Lounge Paris 17">
+    <meta property="og:description" content="Silk Paris : Gastronomie Halal raffinée, Mocktails signatures et Chichas premium dans un cadre d'exception Paris 17ème.">
+    <meta property="og:image" content="https://www.silk.paris/images/og-silk-paris.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Silk Paris",
+      "url": "https://www.silk.paris/",
+      "image": "https://www.silk.paris/images/og-silk-paris.jpg",
+      "logo": "https://www.silk.paris/apple-touch-icon.png",
+      "telephone": "+33650505064",
+      "servesCuisine": ["Halal", "Française", "Orientale"],
+      "priceRange": "€€",
+      "acceptsReservations": "True",
+      "menu": "https://www.silk.paris/#entrees",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "13B Rue Vernier",
+        "postalCode": "75017",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "sameAs": ["https://instagram.com/silk.paris", "https://tiktok.com/@silkparisrestaurant"]
+    }
+    </script>
 
     <style>
         .whatsapp-float {
@@ -60,25 +103,17 @@
 </head>
 <body>
 
-    <a href="https://wa.me/33650505064" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/33650505064" class="whatsapp-float" target="_blank" rel="noopener">
         <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
         </svg>
         <span>Réserver via WhatsApp</span>
     </a>
 
-    <div id="success-modal" class="modal-overlay">
-        <div class="modal-content">
-            <h3>Demande Reçue</h3>
-            <p>Merci pour votre réservation.</p>
-            <p>Une confirmation vous sera envoyée très rapidement.</p>
-            <button onclick="closeModal()" class="btn-close">Fermer</button>
-        </div>
-    </div>
-
     <nav class="navbar">
         <div class="logo">SILK PARIS</div>
-        <ul class="nav-links">
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#entrees">La Carte</a></li>
             <li><a href="#boissons">Boissons</a></li>
             <li><a href="#chichas">Lounge</a></li>
@@ -107,15 +142,15 @@
     <section id="entrees" class="menu-section">
         <h2 class="section-title">Les Entrées</h2>
         <div class="menu-grid">
-            <div class="menu-item"><img src="images/Soupe de saison.jpg" alt="Soupe"><div class="item-text"><div class="item-header"><h3>Soupe de Saison</h3><span class="price">18€</span></div><p>Légumes frais, choisis selon la saison.</p></div></div>
-            <div class="menu-item"><img src="images/dynamite fries.jpg" alt="Frites"><div class="item-text"><div class="item-header"><h3>Dynamite Fries</h3><span class="price">18€</span></div><p>Frites maison, cheddar, oignons frits, jalapeños.</p></div></div>
-            <div class="menu-item"><img src="images/carpaccio.jpg" alt="Carpaccio"><div class="item-text"><div class="item-header"><h3>Carpaccio de Boeuf</h3><span class="price">21€</span></div><p>Boeuf finement découpé, huile d’olive, basilic, parmesan.</p></div></div>
-            <div class="menu-item"><img src="images/Brochettes de poulet.jpeg" alt="Brochette"><div class="item-text"><div class="item-header"><h3>Brochette de Poulet</h3><span class="price">18€</span></div><p>Marinade sauce teriyaki maison et graines de sésame.</p></div></div>
-            <div class="menu-item"><img src="images/gambas dynamite.jpg" alt="Gambas"><div class="item-text"><div class="item-header"><h3>Gambas Buffalo</h3><span class="price">20€</span></div><p>Gambas fraîches, beignet épicé, sauce spéciale.</p></div></div>
-            <div class="menu-item"><img src="images/rakakat et samboussek.jpg" alt="Rakakat"><div class="item-text"><div class="item-header"><h3>Rakakats et Samboussek</h3><span class="price">16€</span></div><p>Assortiment de croustillants fromage et samosas.</p></div></div>
-            <div class="menu-item"><img src="images/stracciatella.jpg" alt="Stracciatella" onerror="this.src='images/entree restaurant.jpg'"><div class="item-text"><div class="item-header"><h3>Stracciatella</h3><span class="price">20€</span></div><p>Stracciatella di buffala, tomates cerises, basilic.</p></div></div>
-            <div class="menu-item"><img src="images/salade avocat crevette.jpg" alt="Salade"><div class="item-text"><div class="item-header"><h3>Salade Avocat Crevettes</h3><span class="price">23€</span></div><p>Roquette, feuilles de chêne, avocats et crevettes.</p></div></div>
-            <div class="menu-item"><img src="images/mac and cheese.jpg" alt="Mac"><div class="item-text"><div class="item-header"><h3>Mac & Cheese</h3><span class="price">16€</span></div><p>Coquillettes, crème, gruyère, muscade.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/soupe-de-saison.webp" alt="Soupe de Saison - Silk Paris"><div class="item-text"><div class="item-header"><h3>Soupe de Saison</h3><span class="price">18€</span></div><p>Légumes frais, choisis selon la saison.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/dynamite-fries.webp" alt="Dynamite Fries - Silk Paris"><div class="item-text"><div class="item-header"><h3>Dynamite Fries</h3><span class="price">18€</span></div><p>Frites maison, cheddar, oignons frits, jalapeños.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/carpaccio.webp" alt="Carpaccio de Boeuf - Silk Paris"><div class="item-text"><div class="item-header"><h3>Carpaccio de Boeuf</h3><span class="price">21€</span></div><p>Boeuf finement découpé, huile d’olive, basilic, parmesan.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/brochettes-de-poulet.webp" alt="Brochette de Poulet - Silk Paris"><div class="item-text"><div class="item-header"><h3>Brochette de Poulet</h3><span class="price">18€</span></div><p>Marinade sauce teriyaki maison et graines de sésame.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/gambas-dynamite.webp" alt="Gambas Buffalo - Silk Paris"><div class="item-text"><div class="item-header"><h3>Gambas Buffalo</h3><span class="price">20€</span></div><p>Gambas fraîches, beignet épicé, sauce spéciale.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/rakakat-et-samboussek.webp" alt="Rakakats et Samboussek - Silk Paris"><div class="item-text"><div class="item-header"><h3>Rakakats et Samboussek</h3><span class="price">16€</span></div><p>Assortiment de croustillants fromage et samosas.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/stracciatella.webp" alt="Stracciatella - Silk Paris"><div class="item-text"><div class="item-header"><h3>Stracciatella</h3><span class="price">20€</span></div><p>Stracciatella di buffala, tomates cerises, basilic.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/salade-avocat-crevette.webp" alt="Salade Avocat Crevettes - Silk Paris"><div class="item-text"><div class="item-header"><h3>Salade Avocat Crevettes</h3><span class="price">23€</span></div><p>Roquette, feuilles de chêne, avocats et crevettes.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/mac-and-cheese.webp" alt="Mac & Cheese - Silk Paris"><div class="item-text"><div class="item-header"><h3>Mac & Cheese</h3><span class="price">16€</span></div><p>Coquillettes, crème, gruyère, muscade.</p></div></div>
         </div>
     </section>
 
@@ -123,17 +158,17 @@
          <div style="text-align: center; margin-bottom: 20px;"><a href="#entrees" class="back-link">↑ Retour aux Entrées</a></div>
         <h2 class="section-title">Les Plats</h2>
         <div class="menu-grid">
-            <div class="menu-item"><img src="images/Poulet frit Coreen.png" alt="Poulet"><div class="item-text"><div class="item-header"><h3>Poulet Frit Coréen</h3><span class="price">22€</span></div><p>Double cuisson, sauce aigre douce épicée.</p></div></div>
-            <div class="menu-item"><img src="images/gnocchi poeles.jpg" alt="Gnocchi"><div class="item-text"><div class="item-header"><h3>Gnocchi Sauce Fromage</h3><span class="price">23€</span></div><p>Gnocchis maison, sauce 3 fromages.</p></div></div>
-            <div class="menu-item"><img src="images/Crispy chicken burger.jpg" alt="Burger"><div class="item-text"><div class="item-header"><h3>Crispy Chicken Burger</h3><span class="price">26€</span></div><p>Poulet croustillant, sauce piquante, cheddar.</p></div></div>
-            <div class="menu-item"><img src="images/Burger Limousine.png" alt="Limousine"><div class="item-text"><div class="item-header"><h3>Limousine Burger</h3><span class="price">28€</span></div><p>100% Boeuf Limousine, oignons caramélisés, sauce west coast.</p></div></div>
-            <div class="menu-item"><img src="images/sexy pasta.jpg" alt="Pasta"><div class="item-text"><div class="item-header"><h3>Sexy Pasta</h3><span class="price">29€</span></div><p>Cuites en papillote, sauce ultra crémeuse.</p></div></div>
-            <div class="menu-item"><img src="images/saumon et tagliatelle.png" alt="Saumon"><div class="item-text"><div class="item-header"><h3>Saumon Tagliatelle</h3><span class="price">30€</span></div><p>Pavé grillé, tagliatelles crème et citron.</p></div></div>
-            <div class="menu-item"><img src="images/escalope milanaise.jpg" alt="escalope"><div class="item-text"><div class="item-header"><h3>Escalope Milanaise</h3><span class="price">26€</span></div><p>Poulet pané, spaghetti sauce tomate basilic.</p></div></div>
-            <div class="menu-item"><img src="images/tournedo.png" alt="Tournedos"><div class="item-text"><div class="item-header"><h3>Tournedos Grillé</h3><span class="price">38€</span></div><p>Pièce tendre, galette de pommes de terre.</p></div></div>
-            <div class="menu-item"><img src="images/risotto.jpg" alt="Risotto"><div class="item-text"><div class="item-header"><h3>Risotto à la Daurade</h3><span class="price">30€</span></div><p>Pavé de poisson, riz crémeux, champignons.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/poulet-frit-coreen.webp" alt="Poulet Frit Coréen - Silk Paris"><div class="item-text"><div class="item-header"><h3>Poulet Frit Coréen</h3><span class="price">22€</span></div><p>Double cuisson, sauce aigre douce épicée.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/gnocchi-poeles.webp" alt="Gnocchi Sauce Fromage - Silk Paris"><div class="item-text"><div class="item-header"><h3>Gnocchi Sauce Fromage</h3><span class="price">23€</span></div><p>Gnocchis maison, sauce 3 fromages.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/crispy-chicken-burger.webp" alt="Crispy Chicken Burger - Silk Paris"><div class="item-text"><div class="item-header"><h3>Crispy Chicken Burger</h3><span class="price">26€</span></div><p>Poulet croustillant, sauce piquante, cheddar.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/burger-limousine.webp" alt="Limousine Burger - Silk Paris"><div class="item-text"><div class="item-header"><h3>Limousine Burger</h3><span class="price">28€</span></div><p>100% Boeuf Limousine, oignons caramélisés, sauce west coast.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/sexy-pasta.webp" alt="Sexy Pasta - Silk Paris"><div class="item-text"><div class="item-header"><h3>Sexy Pasta</h3><span class="price">29€</span></div><p>Cuites en papillote, sauce ultra crémeuse.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/saumon-et-tagliatelle.webp" alt="Saumon Tagliatelle - Silk Paris"><div class="item-text"><div class="item-header"><h3>Saumon Tagliatelle</h3><span class="price">30€</span></div><p>Pavé grillé, tagliatelles crème et citron.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/escalope-milanaise.webp" alt="Escalope Milanaise - Silk Paris"><div class="item-text"><div class="item-header"><h3>Escalope Milanaise</h3><span class="price">26€</span></div><p>Poulet pané, spaghetti sauce tomate basilic.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/tournedo.webp" alt="Tournedos Grillé - Silk Paris"><div class="item-text"><div class="item-header"><h3>Tournedos Grillé</h3><span class="price">38€</span></div><p>Pièce tendre, galette de pommes de terre.</p></div></div>
+            <div class="menu-item"><img loading="lazy" decoding="async" src="images/risotto.webp" alt="Risotto à la Daurade - Silk Paris"><div class="item-text"><div class="item-header"><h3>Risotto à la Daurade</h3><span class="price">30€</span></div><p>Pavé de poisson, riz crémeux, champignons.</p></div></div>
             <div class="menu-item">
-                <img src="images/Kabsa laham.jpg" alt="Kabsa Laham">
+                <img loading="lazy" decoding="async" src="images/kabsa-laham.webp" alt="Kabsa Laham - Silk Paris">
                 <div class="item-text">
                     <div class="item-header">
                         <h3>Kabsa Laham</h3>
@@ -149,16 +184,18 @@
 
     <section id="desserts" class="menu-section">
         <h2 class="section-title">Pâtisseries & Douceurs</h2>
-        <p style="text-align: center; font-style: italic; margin-bottom: 20px;">Toutes nos pâtisseries sont à 15€</p>
-        <p style="text-align: center; font-weight: bold; color: #C5A059; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px;">Demandez notre Carrousel de Desserts</p>
-        
-        <div class="menu-grid">
-            <div class="menu-item"><img src="images/dessert1.jpg" alt="Dessert 1" onerror="this.src='images/entree restaurant.jpg'"></div>
-            <div class="menu-item"><img src="images/dessert2.jpg" alt="Dessert 2" onerror="this.src='images/entree restaurant.jpg'"></div>
-            <div class="menu-item"><img src="images/dessert3.jpg" alt="Dessert 3" onerror="this.src='images/entree restaurant.jpg'"></div>
-            <div class="menu-item"><img src="images/dessert4.jpg" alt="Dessert 4" onerror="this.src='images/entree restaurant.jpg'"></div>
-            <div class="menu-item"><img src="images/dessert5.jpg" alt="Dessert 5" onerror="this.src='images/entree restaurant.jpg'"></div>
-            <div class="menu-item"><img src="images/dessert6.jpg" alt="Dessert 6" onerror="this.src='images/entree restaurant.jpg'"></div>
+        <p class="desserts-price">Toutes nos pâtisseries sont à 15€</p>
+        <p class="desserts-sub">Notre sélection change chaque jour : demandez le carrousel du moment</p>
+
+        <div class="dessert-carousel" data-carousel aria-roledescription="carousel" aria-label="Pâtisseries & Douceurs">
+            <div class="carousel-viewport"><div class="carousel-track">
+                <figure class="carousel-slide"><img loading="lazy" decoding="async" src="images/desserts/dessert-1.webp" alt="Dessert du jour 1"></figure>
+                <figure class="carousel-slide"><img loading="lazy" decoding="async" src="images/desserts/dessert-2.webp" alt="Dessert du jour 2"></figure>
+                <figure class="carousel-slide"><img loading="lazy" decoding="async" src="images/desserts/dessert-3.webp" alt="Dessert du jour 3"></figure>
+            </div></div>
+            <button class="carousel-btn prev" type="button" aria-label="Dessert précédent">&#8249;</button>
+            <button class="carousel-btn next" type="button" aria-label="Dessert suivant">&#8250;</button>
+            <div class="carousel-dots"></div>
         </div>
     </section>
 
@@ -167,7 +204,7 @@
         
         <div class="signature-box-main">
             <div class="signature-img">
-                <img src="images/champagne saoudien.jpg" alt="Champagne Saoudien" onerror="this.src='images/Cocktail1.jpg'">
+                <img loading="lazy" decoding="async" src="images/champagne-saoudien.webp" alt="Champagne Saoudien">
             </div>
             <div class="signature-text">
                 <h3>Champagne Saoudien (Broc 1L)</h3>
@@ -177,8 +214,8 @@
         </div>
 
         <div class="drinks-visual-container">
-            <div class="drink-img-box"><img src="images/Cocktail1.jpg" alt="Cocktail Frais"></div>
-            <div class="drink-img-box"><img src="images/Cocktail2.jpg" alt="Création Silk"></div>
+            <div class="drink-img-box"><img loading="lazy" decoding="async" src="images/cocktail1.webp" alt="Cocktail Frais"></div>
+            <div class="drink-img-box"><img loading="lazy" decoding="async" src="images/cocktail2.webp" alt="Création Silk"></div>
         </div>
 
         <div class="drinks-grid">
@@ -208,7 +245,7 @@
         </div>
 
         <div class="hot-drinks-section">
-            <h3 class="hot-title">Instant Café & Thé</h3>
+            <h3 class="hot-title">Cafés & Thés</h3>
             <div class="hot-content">
                 <div class="hot-text">
                     <p>Terminez votre repas avec nos sélections de cafés d'exception et thés parfumés.</p>
@@ -219,7 +256,7 @@
                     </ul>
                 </div>
                 <div class="hot-image">
-                    <img src="images/cafe.jpeg" alt="Café gourmand">
+                    <img loading="lazy" decoding="async" src="images/cafe.webp" alt="Café gourmand">
                 </div>
             </div>
         </div>
@@ -233,13 +270,13 @@
             <div class="chicha-showcase-container">
                 
                 <div class="chicha-spotlight">
-                    <div class="glow-effect"></div> <img src="images/Chicha complete.png" alt="Chicha Silk" class="floating-img">
+                    <div class="glow-effect"></div> <img loading="lazy" decoding="async" src="images/chicha-complete.webp" alt="Chicha Silk" class="floating-img">
                     <div class="chicha-badge">PREMIUM</div>
                 </div>
 
                 <div class="chicha-spotlight small-spotlight">
                     <div class="glow-effect"></div>
-                    <img src="images/charbon chicha.png" alt="Kaloud" class="floating-img-slow">
+                    <img loading="lazy" decoding="async" src="images/charbon-chicha.webp" alt="Kaloud" class="floating-img-slow">
                     <p class="legend-text">Service Kaloud</p>
                 </div>
 
@@ -268,9 +305,9 @@
             <div class="lounge-gallery">
                 <h3>Ambiance Nocturne</h3>
                 <div class="gallery-row">
-                    <img src="images/deco chicha sombre 2.jpg" alt="Ambiance Silk 1">
-                    <img src="images/deco chicha sombre3.jpg" alt="Ambiance Silk 2">
-                    <img src="images/deco salle chicha sombre.jpg" alt="Ambiance Silk 3">
+                    <img loading="lazy" decoding="async" src="images/deco-chicha-sombre-2.webp" alt="Ambiance Silk 1">
+                    <img loading="lazy" decoding="async" src="images/deco-chicha-sombre3.webp" alt="Ambiance Silk 2">
+                    <img loading="lazy" decoding="async" src="images/deco-salle-chicha-sombre.webp" alt="Ambiance Silk 3">
                 </div>
             </div>
 
@@ -281,23 +318,24 @@
         <h2 class="section-title">Réservation</h2>
         <p style="text-align: center; margin-bottom: 30px;">Réservez votre table d'exception.</p>
         
-        <form action="https://formsubmit.co/silkparis75017@gmail.com" method="POST" class="reservation-form">
+        <form id="bookingForm" action="https://formsubmit.co/silkparis75017@gmail.com" method="POST" class="reservation-form">
             <input type="hidden" name="_subject" value="Nouvelle réservation - Silk Paris">
             <input type="hidden" name="_next" value="https://www.silk.paris/merci.html">
             <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
             <div class="form-group">
                 <label>Nom complet</label>
-                <input type="text" name="nom" required>
+                <input type="text" name="nom" autocomplete="name" required>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label>Date</label>
-                    <input type="date" name="date" required>
+                    <input type="date" name="date" id="resa-date" required>
                 </div>
                 <div class="form-group">
                     <label>Heure</label>
-                    <input type="time" name="heure" min="18:00" max="02:00" required>
+                    <input type="time" name="heure" required>
                 </div>
             </div>
             <div class="form-row">
@@ -313,10 +351,11 @@
                 </div>
                 <div class="form-group">
                     <label>Téléphone</label>
-                    <input type="tel" name="telephone" placeholder="06..." required>
+                    <input type="tel" name="telephone" autocomplete="tel" placeholder="06..." required>
                 </div>
             </div>
             <button type="submit" class="btn-submit">Confirmer la demande</button>
+            <p class="form-rgpd">Vos informations servent uniquement à traiter votre réservation et ne sont pas conservées au-delà. <a href="mentions-legales.html#rgpd">En savoir plus</a></p>
         </form>
     </section>
 
@@ -324,12 +363,13 @@
     <div class="footer-content">
         <div class="logo-footer">SILK PARIS</div>
         <p class="address-footer">13B Rue Vernier, 75017 PARIS</p>
+        <p class="footer-contact"><a href="tel:+33650505064" dir="ltr">06 50 50 50 64</a><span class="separator">|</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Silk+Paris+13B+Rue+Vernier+75017+Paris" target="_blank" rel="noopener">Itinéraire</a></p>
         <div class="social-links">
-            <a href="https://instagram.com/silk.paris" target="_blank">INSTAGRAM</a>
+            <a href="https://instagram.com/silk.paris" target="_blank" rel="noopener">INSTAGRAM</a>
             <span class="separator">|</span>
-            <a href="https://tiktok.com/@silkparisrestaurant" target="_blank">TIKTOK</a>
+            <a href="https://tiktok.com/@silkparisrestaurant" target="_blank" rel="noopener">TIKTOK</a>
             <span class="separator">|</span>
-            <a href="https://wa.me/33650505064" target="_blank">WHATSAPP</a>
+            <a href="https://wa.me/33650505064" target="_blank" rel="noopener">WHATSAPP</a>
         </div>
         <p class="copyright">© 2026 Tous droits réservés.</p>
         
@@ -342,51 +382,6 @@
         </p>
     </div>
 </footer>
-
-    <script>
-        const form = document.getElementById('bookingForm');
-        const modal = document.getElementById('success-modal');
-        
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(form);
-            
-            fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    modal.style.display = 'flex'; // Affiche le succès
-                    form.reset(); // Vide le formulaire
-                } else {
-                    alert("Oups ! Il y a eu un problème avec votre envoi. Vous pouvez nous contacter via WhatsApp.");
-                }
-            }).catch(error => {
-                alert("Erreur technique. Veuillez nous contacter via WhatsApp.");
-            });
-        });
-
-        function closeModal() { modal.style.display = 'none'; }
-    </script>
-    
-<div id="cookie-banner" class="cookie-banner">
-    <p>Nous utilisons des cookies pour garantir la meilleure expérience sur notre site.</p>
-    <button id="accept-cookies" class="btn-cookie">ACCEPTER</button>
-</div>
-
-<script>
-    const cookieBanner = document.getElementById('cookie-banner');
-    const acceptBtn = document.getElementById('accept-cookies');
-    if (!localStorage.getItem('cookiesAccepted')) {
-        cookieBanner.style.display = 'flex';
-    }
-    acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('cookiesAccepted', 'true');
-        cookieBanner.style.display = 'none';
-    });
-</script>
+    <script src="site.js" defer></script>
 </body>
 </html>
