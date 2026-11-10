@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /merci.html
-Disallow: /merci-en.html
-Disallow: /merci-ar.html
 
 Sitemap: https://www.silk.paris/sitemap.xml

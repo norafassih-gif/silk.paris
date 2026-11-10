@@ -1,0 +1,10 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+    { "source": "/en.html", "destination": "/", "permanent": true },
+    { "source": "/ar.html", "destination": "/", "permanent": true },
+    { "source": "/merci.html", "destination": "/", "permanent": true },
+    { "source": "/merci-en.html", "destination": "/", "permanent": true },
+    { "source": "/merci-ar.html", "destination": "/", "permanent": true }
+  ]
+}
