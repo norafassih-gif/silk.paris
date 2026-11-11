@@ -22,7 +22,7 @@
   function go() {
     if (started || closed) return; started = true;
     intro.classList.add('go');
-    timer = setTimeout(openIntro, 2900);
+    timer = setTimeout(openIntro, 4300);
   }
   var img = intro.querySelector('.logo-spin');
   if (img && img.decode) { img.decode().then(function () { requestAnimationFrame(go); }, go); }
