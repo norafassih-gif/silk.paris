@@ -1,15 +1,16 @@
 (function () {
   var d = document, root = d.documentElement, intro = d.getElementById('intro');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var closed = false, timer = null;
+  var closed = false, timer = null, started = false;
   function finish() {
     if (closed) return; closed = true;
     if (intro && intro.parentNode) intro.parentNode.removeChild(intro);
-    root.classList.remove('intro-lock');
+    root.classList.remove('intro-lock', 'intro-hide');
   }
   function openIntro() {
     if (!intro || closed) return;
     clearTimeout(timer);
+    root.classList.remove('intro-hide');
     intro.classList.add('open');
     setTimeout(finish, 1750);
   }
@@ -17,7 +18,16 @@
   try { seen = sessionStorage.getItem('silkIntro') === '1'; } catch (e) {}
   if (!intro || reduce || seen || location.hash.length > 1) { finish(); return; }
   try { sessionStorage.setItem('silkIntro', '1'); } catch (e) {}
-  timer = setTimeout(openIntro, 4800);
+  /* l'animation ne demarre que quand le logo est decode : plus de saccades au chargement */
+  function go() {
+    if (started || closed) return; started = true;
+    intro.classList.add('go');
+    timer = setTimeout(openIntro, 4000);
+  }
+  var img = intro.querySelector('.logo-spin');
+  if (img && img.decode) { img.decode().then(function () { requestAnimationFrame(go); }, go); }
+  else { go(); }
+  setTimeout(go, 1500);
   var skip = d.getElementById('skip');
   if (skip) skip.addEventListener('click', function (e) { e.stopPropagation(); openIntro(); });
   intro.addEventListener('click', openIntro);
