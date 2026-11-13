@@ -6,12 +6,14 @@
     if (closed) return; closed = true;
     if (intro && intro.parentNode) intro.parentNode.removeChild(intro);
     root.classList.remove('intro-lock', 'intro-hide');
+    d.dispatchEvent(new Event('silk-intro-done'));
   }
   function openIntro() {
     if (!intro || closed) return;
     clearTimeout(timer);
     root.classList.remove('intro-hide');
     intro.classList.add('open');
+    d.dispatchEvent(new Event('silk-intro-open'));
     setTimeout(finish, 1750);
   }
   var seen = false;
